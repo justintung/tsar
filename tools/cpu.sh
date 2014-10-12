@@ -21,7 +21,7 @@ set xlabel "time"
 set ylabel "percent (%)"
 set yrange [ 0 : 100 ]
 set xdata time
-set timefmt "%d/%m-%H:%M"
+set timefmt "%d/%m/%y-%H:%M"
 set format x "%H:%M"
 plot "$datafile" using 1:2 title "user" with lines, "$datafile" using 1:3 title "sys" with lines, "$datafile" using 1:4 title "wait" with lines, "$datafile" using 1:5 title "util" with lines
 

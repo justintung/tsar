@@ -19,7 +19,7 @@ set output "$2"
 set title "packets in/out ($duration)"
 set xlabel "time"
 set xdata time
-set timefmt "%d/%m-%H:%M"
+set timefmt "%d/%m/%y-%H:%M"
 set format x "%H:%M"
 plot "$datafile" using 1:2 title "packets in" with lines, "$datafile" using 1:3 title "packets out" with lines
 

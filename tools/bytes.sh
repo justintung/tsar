@@ -20,7 +20,7 @@ set title "bytes in/out ($duration)"
 set xlabel "time"
 set ylabel "K bytes"
 set xdata time
-set timefmt "%d/%m-%H:%M"
+set timefmt "%d/%m/%y-%H:%M"
 set format x "%H:%M"
 plot "$datafile" using 1:2 title "bytes in" with lines, "$datafile" using 1:3 title "bytes out" with lines
 

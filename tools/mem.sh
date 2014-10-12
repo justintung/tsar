@@ -22,7 +22,7 @@ set xlabel "time"
 set ylabel "M bytes"
 set yrange [ 0 : $total * 1.1 ]
 set xdata time
-set timefmt "%d/%m-%H:%M"
+set timefmt "%d/%m/%y-%H:%M"
 set format x "%H:%M"
 plot "$datafile" using 1:2 title "free" with lines, "$datafile" using 1:3 title "used" with lines, "$datafile" using 1:4 title "buff" with lines, "$datafile" using 1:5 title "cache" with lines
 

@@ -19,7 +19,7 @@ set output "$2"
 set title "load ($duration)"
 set xlabel "time"
 set xdata time
-set timefmt "%d/%m-%H:%M"
+set timefmt "%d/%m/%y-%H:%M"
 set format x "%H:%M"
 plot "$datafile" using 1:2 title "load1" with lines, "$datafile" using 1:3 title "load5" with lines, "$datafile" using 1:4 title "load15" with lines
 EOF
